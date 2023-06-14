@@ -29,6 +29,26 @@ const App = () => {
             accessibilityLabel="Digite seu email. Caixa de edição"
             bigger
          />
+                      <TextField
+            label="Erro"
+            onChangeText={setText}
+            keyboardType="email-address"
+            autoCapitalize="none"
+            feedback={feedBack}
+            accessibilityLabel="Caixa de edição"
+            bigger
+            error
+         />
+          <TextField
+            label="Sucesso"
+            onChangeText={setText}
+            keyboardType="email-address"
+            autoCapitalize="none"
+            feedback={feedBack}
+            accessibilityLabel="Caixa de edição"
+            bigger
+            success
+         />
          <DropDown
               changeIsOpen={setIsOpen}
               selected={selectedItem}
@@ -57,6 +77,7 @@ const App = () => {
                 },
               ]}
             />
+
       </Container>
    )
 }
