@@ -8,6 +8,8 @@ import { Checkbox } from '../../src/components/Checkbox';
 import { TouchableOpacity } from 'react-native';
 import { RadioButton } from '../../src/components/RadioButton';
 import { Toggle } from '../../src/components/Toggle';
+import ActionButton from '../../src/components/Button';
+import { colors } from '../../src/config/themes';
 
 const App = () => {
   const [text, setText] = useState('')
@@ -21,11 +23,11 @@ const App = () => {
 
   return (
     <Container>
-      <Title fontFamily='Montserrat'>Title</Title>
-      <MinorTitle fontFamily='Montserrat'>MinorTitle</MinorTitle>
-      <Description fontFamily='Montserrat' >Description</Description>
-      <MinorDescription fontFamily='Montserrat'>MinorDescription</MinorDescription>
-      <Regular fontFamily='Montserrat'>Regular</Regular>
+      <Title fontFamily='Roboto'>Title</Title>
+      <MinorTitle fontFamily='Roboto'>MinorTitle</MinorTitle>
+      <Description fontFamily='Roboto' >Description</Description>
+      <MinorDescription fontFamily='Roboto'>MinorDescription</MinorDescription>
+      <Regular fontFamily='Roboto'>Regular</Regular>
 
       <TextField
         label="Seu email"
@@ -108,6 +110,12 @@ const App = () => {
         <Toggle checked={!toggle} theme={'light'} />
         <Toggle checked={toggle} theme={'light'} />
       </>
+
+      <ActionButton label={'Button'} labelSize={12} color={colors.blue100} height={42} onPress={() => {}} />
+      <ActionButton label={'Button'} color={colors.blue150} height={42} onPress={() => {}} />
+      <ActionButton label={'Button'} color={colors.blue200} height={42} onPress={() => {}} />
+      <ActionButton label={'Button'} color={colors.grey300} height={42} onPress={() => {}} />
+
     </Container>
   )
 }
