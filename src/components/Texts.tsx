@@ -32,7 +32,7 @@ export const Description = styled.Text<{ fontFamily: string }>`
   font-size: 14px;
   line-height: 17px;
   color: ${themes.light.titleTextColor};
-  font-family: ${(props) => props.fontFamily}-SemiBold;
+  font-family: ${(props) => props.fontFamily}-Bold;
   margin-bottom: 8px;
 `
 export const MinorDescription = styled.Text<{ fontFamily: string }>`

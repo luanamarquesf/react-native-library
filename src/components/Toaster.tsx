@@ -83,7 +83,7 @@ const Label = styled.Text<{
 }>`
   color: ${(props) => TEXT_COLORS[props.type]};
   font-size: 12px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Roboto-Regular';
   ${(props) => props.type === 'float' && 'font-size: 16px'};
 `
 

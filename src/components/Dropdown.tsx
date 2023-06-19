@@ -43,7 +43,7 @@ const DropDownIconContainer = styled.View<{
   border-radius: 8px;
   border-color: ${themes.light.titleTextColor};
   border-width: 1px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Roboto-Regular';
   color: ${themes.light.titleTextColor};
   height: 48px;
   padding-right: 24px;
@@ -81,7 +81,7 @@ const DropDownItem = styled.View`
 
 const Label = styled.Text`
   color: ${themes.light.titleTextColor};
-  font-family: 'Montserrat-Regular';
+  font-family: 'Roboto-Regular';
   font-size: 14px;
   letter-spacing: -0.016px;
   margin-left: 10px;

@@ -12,7 +12,8 @@
     "sourceMap": true,
     "strict": true,
     "target": "ES2018",
+    "typeRoots" : ["node_modules/@types", "src/types"],
   },
   "exclude": ["**/__tests__/*"],
-  "include": ["src"]
+  "include": ["src", "./src/index.d.ts"]
 }

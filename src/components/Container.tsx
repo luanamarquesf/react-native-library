@@ -8,4 +8,5 @@ export const Container = styled.ScrollView.attrs(() => ({
 }))`
   padding: 24px;
   margin-top: ${Platform.OS === 'ios' ? 24 : 0}px;
+  padding-bottom: 82px;
 `

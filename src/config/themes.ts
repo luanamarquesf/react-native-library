@@ -1,3 +1,5 @@
+import hexRgb from '../utils/hex-rgb'
+
 export interface AppTheme {
   backgroundColor: string
   iconColor: string
@@ -34,6 +36,14 @@ export const colors = {
 
   green: '#04ab93', // 171, 95%, 34% hsb 171, 98%, 67%
 }
+
+export const rgb: (hex: string, alpha?: number) => string = (
+  hex: string,
+  alpha?: number
+) =>
+  alpha
+    ? hexRgb(hex, { alpha: alpha, format: 'css' })
+    : hexRgb(hex, { format: 'css' })
 
 export const themes: { [key: string]: AppTheme } = {
   dark: {

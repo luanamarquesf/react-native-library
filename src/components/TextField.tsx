@@ -49,7 +49,7 @@ const Field = styled.TextInput<{ isTextGrey?: boolean }>`
   align-items: center;
   justify-content: flex-start;
   font-size: 14px;
-  font-family: 'Montserrat-Regular';
+  font-family: 'Roboto-Regular';
   color: ${themes.light.titleTextColor};
   z-index: 2;
   height: 56px;
@@ -69,7 +69,7 @@ export const Label = styled.Text<{
   floatedLeft?: string
   isGrey?: boolean
 }>`
-  font-family: 'Montserrat-Regular';
+  font-family: 'Roboto-Regular';
   font-size: 14px;
   line-height: 17px;
   letter-spacing: -0.014px;
